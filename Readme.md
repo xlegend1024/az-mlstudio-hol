@@ -2,7 +2,7 @@
 
 ## Hand on lab agenda
 
-1. <a href="https://github.com/xlegend1024/az-mlstudio-hol" target="_blank">Login Azure Machine Learning Studio</a>
+1. <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/01.MLStudio.md" target="_blank">Login Azure Machine Learning Studio</a>
 Simple Azure ML Studio tour
 
 1. <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/NYCEnergyForecast/02.01.NYCEnergyForecast.md" target="_blank">New York Energy Demand Forecast</a>
