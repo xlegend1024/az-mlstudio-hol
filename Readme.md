@@ -1,6 +1,6 @@
 # Azure Machine Learning Studio Hands on lab
 
-## Login
+## Login to Azure Machine Learning Studio
 
 Go to <a href="https://studio.azureml.net/" target="_blank">Azure Machine Learning Studio</a> and login with your microsoft account.
 
@@ -14,8 +14,15 @@ Once you click one your workspace, you wil see Azure Machine Learning Studio. Yo
 Continue hands on lab by clicking following lab.
 
 ## Hand on lab agenda
-1. <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/EnergyEfficiency/02.01.EnergyEfficiency.md" target="_blank">Energy Efficiency Forecast</a>
-Build score model and opertaionalize the model
+1. Go to <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/EnergyEfficiency/02.01.EnergyEfficiency.md" target="_blank">Energy Efficiency Forecast</a>
 
-1. <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/ServerWorkloadForecast/03.01.ServerWorkLoadForecast.md" target="_blank">Server Workload Forecast</a>
-Compare different algorithms and tune hyperparameters to select best model 
+> Build score model and opertaionalize the model
+> 30 mins
+
+1. Go to <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/ServerWorkloadForecast/03.01.ServerWorkLoadForecast.md" target="_blank">Server Workload Forecast</a>
+
+> Compare different algorithms and tune hyperparameters to select best model 
+> 60 mins
+
+## Download Powerpotin Slide
+<a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/pptx/Azure%20ML%20Studio.pptx?raw=true" target="_blank">Download</a>
