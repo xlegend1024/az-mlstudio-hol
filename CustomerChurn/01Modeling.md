@@ -1,29 +1,6 @@
-# 03. Modeling (Azure Machine Learning Studio)
+# 01. Modeling (Azure Machine Learning Studio)
 
-## 1. Create Azure Machine Learning Studio
-
-Create a service from here [Azure Portal #Create ML Studio](https://ms.portal.azure.com/#create/Microsoft.MachineLearningWorkspace) for lab.
-
-Reference following table to create the service
-
-|Name|Value|
-|---|---|
-|workspace Name|azlab###|
-|Subscription|_yoursubscription_|
-|Resource Group|azlab-###-rg|
-|Localtion|South Central US|
-|Storage Account|'Create new' , azlab###storage|
-|Workspace pricing tier|Standard|
-|Web service plan|'create new', azlab###Plan|
-
-![CreateMLStudio](../images/03.01.png)
-
-Once you fill out the from, __create__ by clicking button 'Create'
-
-> __Pin__ the service to access the service easy
-> ![CreateMLStudio](../images/03.02.png)
-
-## 2. Access ML Studio
+## 1. Access ML Studio
 
 Open a new browser or tap and go to [Azure ML Studio](https://studio.azureml.net)
 
@@ -49,26 +26,6 @@ __Click__ on the title of the experiment, and name it as _azlab###_
 
 3.2.1. Get dataset url
 
-In order to get the dataset url from your blob storage, you need to go to your blob storage account fomr Azure Portal
-
-Open new tab (or browser) go to [Azure Portal](https://portal.azure.com)
-
-Go to you blob by searching name of your blob which is similiar as _'blobdev'_
-
-![searchblob](../images/03.05.01.png)
-
-In order to get save url to access to the dataset, you need to create a SAS url from the portal
-
-Go to your blob storage account and go to container _'ingest'_
-
-> Follow menu from the blob blade, _Blob Service > Blobs > inget > azmlstudio_
-
-To generate SAS, click on the file _'part-00000-tid....csv'_, _'Generate SAS'_, _'Generate blob SAS token and URL'_ and then click on _'copy icon'_ at the bottom of the screen
-
-![searchblob](../images/03.05.02.png)
-
-Come back to Azure Machine Learning Studio
-
 __Search__ _import_ from the left search box and __drag and drop__ the import module to canvas
 
 __Click__ on the _'Import Data'_ module
@@ -78,7 +35,7 @@ Chage some options in the properties on the left panel
 |Name|Value|
 |---|---|
 |Data Source|Web URL via HTTP|
-|Data Source URL|_paste url from the blob SAS generater_|
+|Data Source URL|```https://raw.githubusercontent.com/xlegend1024/az-mlstudio-hol/master/CustomerChurn/customerchurnsource.csv```|
 |Data format|csv|
 |CSV or TSV has header|Check|
 |Use cached resutls|Check|
@@ -122,7 +79,4 @@ And the label is 'Churn' since we are trying to build a machine learning to pred
 ![import](../images/03.11.png)
 
 ---
-[Next > 04. Operationalization](https://github.com/xlegend1024/az-cloudscale-adv-analytics/blob/master/04Operationalization.md)
-
----
-[Main](https://github.com/xlegend1024/az-cloudscale-adv-analytics/blob/master/README.md)
+[Next > 02. Operationalization](https://github.com/xlegend1024/az-mlstudio-hol/blob/master/CustomerChurn/02Operationalization.md)
