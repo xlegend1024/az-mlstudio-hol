@@ -19,10 +19,5 @@ Continue hands on lab by clicking following lab.
 > Build score model and opertaionalize the model
 > 30 mins
 
-1. Go to <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/ServerWorkloadForecast/03.01.ServerWorkLoadForecast.md" target="_blank">Server Workload Forecast</a>
-
-> Compare different algorithms and tune hyperparameters to select best model 
-> 60 mins
-
 ## Download Powerpotin Slide
 <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/pptx/Azure%20ML%20Studio.pptx?raw=true" target="_blank">Download</a>
