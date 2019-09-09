@@ -1,16 +1,5 @@
 # 03. Modeling (Azure Machine Learning Studio)
 
-## Architecture
-
-After the data preperation on Azure Databricks, it is time to build a machine learning model to prediect customer chrun. In this lab, we'll use Azure Machine Learning Studio for training and modeling.
-
-* Azure Machine Learning Studio
-* How to understand data
-* Understand traning algorithm
-* Traing models and select the best model
-
-![03](./images/arch03.png)
-
 ## 1. Create Azure Machine Learning Studio
 
 Create a service from here [Azure Portal #Create ML Studio](https://ms.portal.azure.com/#create/Microsoft.MachineLearningWorkspace) for lab.
@@ -19,20 +8,20 @@ Reference following table to create the service
 
 |Name|Value|
 |---|---|
-|workspace Name|azhol###|
+|workspace Name|azlab###|
 |Subscription|_yoursubscription_|
-|Resource Group|azhol-###-rg|
+|Resource Group|azlab-###-rg|
 |Localtion|South Central US|
-|Storage Account|'Create new' , azhol###storage|
+|Storage Account|'Create new' , azlab###storage|
 |Workspace pricing tier|Standard|
-|Web service plan|'create new', azhol###Plan|
+|Web service plan|'create new', azlab###Plan|
 
-![CreateMLStudio](./images/03.01.png)
+![CreateMLStudio](../images/03.01.png)
 
 Once you fill out the from, __create__ by clicking button 'Create'
 
 > __Pin__ the service to access the service easy
-> ![CreateMLStudio](./images/03.02.png)
+> ![CreateMLStudio](../images/03.02.png)
 
 ## 2. Access ML Studio
 
@@ -40,21 +29,21 @@ Open a new browser or tap and go to [Azure ML Studio](https://studio.azureml.net
 
 __Click__ on sign in, if you are already loged in on Azure Portal, it'll automatically
 
-![WorkspaceName](./images/03.03.png)
+![WorkspaceName](../images/03.03.png)
 
 When you logged in to the service, please make sure your workspace name is correct or not
 
-![WorkspaceName](./images/03.03.02.png)
+![WorkspaceName](../images/03.03.02.png)
 
 ## 3. Create a new experiment
 
 __Click__ '+ NEW' and __click__ 'Blank Experiment'
 
-![newexp](./images/03.04.png)
+![newexp](../images/03.04.png)
 
 ### 3.1. Rename experiment
 
-__Click__ on the title of the experiment, and name it as _azhol###_
+__Click__ on the title of the experiment, and name it as _azlab###_
 
 ### 3.2. Imoprt dataset
 
@@ -66,7 +55,7 @@ Open new tab (or browser) go to [Azure Portal](https://portal.azure.com)
 
 Go to you blob by searching name of your blob which is similiar as _'blobdev'_
 
-![searchblob](./images/03.05.01.png)
+![searchblob](../images/03.05.01.png)
 
 In order to get save url to access to the dataset, you need to create a SAS url from the portal
 
@@ -76,7 +65,7 @@ Go to your blob storage account and go to container _'ingest'_
 
 To generate SAS, click on the file _'part-00000-tid....csv'_, _'Generate SAS'_, _'Generate blob SAS token and URL'_ and then click on _'copy icon'_ at the bottom of the screen
 
-![searchblob](./images/03.05.02.png)
+![searchblob](../images/03.05.02.png)
 
 Come back to Azure Machine Learning Studio
 
@@ -94,7 +83,7 @@ Chage some options in the properties on the left panel
 |CSV or TSV has header|Check|
 |Use cached resutls|Check|
 
-![import](./images/03.07.png)
+![import](../images/03.07.png)
 
 __Click__ _'Run'_ button in the bottom of the canvas, then it will download the dataset from blob to Azure ML Studio in a  minute (around 10 sec)
 
@@ -107,7 +96,7 @@ __Right click__ on the port of the module and __click__ on _'Visualize'_
 
 From the visualize you can see summary informatio about the dataset
 
-![import](./images/03.08.png)
+![import](../images/03.08.png)
 
 ### 3.4. Split data
 
@@ -115,11 +104,11 @@ __Search__ _split Data_ from the left search box and __drag and drop__ the impor
 
 And __drag__ _bottom port of Import Data module_ __drop__ to _top port of Split Data module_ to link between thoes two module
 
-![import](./images/03.09.png)
+![import](../images/03.09.png)
 
 Update split ratio in the properites
 
-![import](./images/03.10.png)
+![import](../images/03.10.png)
 
 
 ### 3.5. Train
@@ -130,7 +119,7 @@ To trian the model we'll use:
 
 And the label is 'Churn' since we are trying to build a machine learning to predict a customer  churn
 
-![import](./images/03.11.png)
+![import](../images/03.11.png)
 
 ---
 [Next > 04. Operationalization](https://github.com/xlegend1024/az-cloudscale-adv-analytics/blob/master/04Operationalization.md)
