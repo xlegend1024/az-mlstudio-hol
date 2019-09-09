@@ -14,6 +14,12 @@ Once you click one your workspace, you wil see Azure Machine Learning Studio. Yo
 Continue hands on lab by clicking following lab.
 
 ## Hand on lab agenda
+
+1. Go to <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/CustomerChurn/01Modeling.md" target="_blank">Customer Churn</a>
+
+> Build score model and opertaionalize the model
+> 30 mins
+
 1. Go to <a href="https://github.com/xlegend1024/az-mlstudio-hol/blob/master/EnergyEfficiency/02.01.EnergyEfficiency.md" target="_blank">Energy Efficiency Forecast</a>
 
 > Build score model and opertaionalize the model
